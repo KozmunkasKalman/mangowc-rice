@@ -1,0 +1,63 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 24,
+  "spacing": 4,
+
+  "modules-left": ["custom/menu", "dwl/tags", "dwl/window"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "battery", "network", "pulseaudio"],
+
+  "dwl/tags": {
+    "hide-vacant": true
+  },
+
+  "dwl/window": {
+    "format": "{title}",
+    "on-click": "",
+    "tooltip": false
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": " {:%Y %B %d}\n\n{calendar}"
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 16,
+    "show-passive-items": true
+  },
+
+  "battery": {
+    "states": {
+      "warning": 33,
+      "critical": 10
+    },
+    "format": "{capacity}%"
+  },
+
+  "network": {
+    "format-wifi": " Wifi ({signalStrength}%)",
+    "format-ethernet": " Ethernet",
+    "format-disconnected": " Disconnected",
+    "tooltip-format": "{ipaddr}"
+  },
+
+  "pulseaudio": {
+    // "scroll-step": 1, // %, can be a float
+    "format": "{icon} {volume}%",
+    "format-muted": "󰖁",
+    "format-icons": {
+      "default": ["󰕿", "󰖀", "󰕾"]
+    },
+    "tooltip-format": false,
+    "on-click": "pavucontrol"
+  },
+
+  "custom/menu": {
+    "format": "󰀻",
+    "tooltip-format": "Menu",
+    "on-click": "rofi -show drun -theme ~/.config/rofi/style.rasi"
+  }
+}

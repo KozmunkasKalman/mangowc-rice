@@ -1,0 +1,158 @@
+/* CSS for default things */
+
+window#waybar {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#tags {
+  margin: 0px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 0px;
+  background-color: transparent;
+  color: #cacabe;
+}
+
+#tags button {
+  min-width: 0;
+  min-height: 0;
+  margin: 0px;
+  padding: 0px; 
+  background-color: transparent;
+  border-radius: 4px;
+  font-family: "FiraCode Nerd Font Mono", auto, auto;
+  font-size: 0;
+  font-weight: bold;
+}
+
+#tags button.occupied {  
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: transparent;
+  color: #cacabe;
+  font-size: 16px;
+}
+
+#tags button.focused {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #cacabe;
+  color: #151412;
+  font-size: 16px;
+}
+
+#tags button.urgent {
+  background-color: #cc0000;
+  color: #cacabe;
+}
+
+#window {
+  margin: 0px;
+  margin-left: 2px;
+  margin-right: 4px;
+  padding: 0px;
+  padding-right: 4px;
+  font-family: "FiraCode Nerd Font", auto, auto;
+  font-size: 14px;
+  background-color: transparent;
+  color: #cacabe;
+}
+
+#waybar.empty #window { /* no window makes window title disappear */
+  background-color: transparent;
+  background: none;
+}
+
+#clock {
+  margin: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-family: "FiraCode Nerd Font Mono", auto, auto;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #cacabe;
+}
+
+#tray {
+  margin: 0px;
+  margin-left: 8px;
+  margin-right: 0px;
+  padding: 0px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-family: "FiraCode Nerd Font Mono", auto, auto;
+  font-size: 12px;
+  background-color: transparent;
+  color: #cacabe;
+}
+
+#battery {
+  margin: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-family: "Sans", auto, auto;
+  font-size: 14px;
+  background-color: transparent;
+  color: #cacabe;
+}
+
+#network {
+  margin: 0px;
+  margin-left: 0px;
+  margin-right: 4px;
+  padding: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-family: "FiraCode Nerd Font", auto, auto;
+  font-size: 14px;
+  background-color: transparent;
+  color: #cacabe;
+}
+
+#pulseaudio {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 8px;
+  padding-right: 6px;
+  border-radius: 4px 0px 0px 4px;
+  font-family: "FiraCode Nerd Font", auto, auto;
+  font-size: 14px;
+  background-color: #cacabe;
+  color: #151412;
+}
+
+/* Custom */
+
+#custom-menu {
+  margin: 0px;
+  margin-right: -4px;
+  padding: 0px;
+  padding-left: 8px;
+  padding-right: 11px;
+  border-radius: 0px 4px 4px 0px;
+  font-family: "FiraCode Nerd Font Mono", auto, auto;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #cacabe;
+  color: #151412;
+}
+
+/* Tooltips */
+
+tooltip {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+}
+
+tooltip label {
+  color: #cacabe;
+  font-family: "FiraCode Nerd Font Mono", auto, auto;
+  font-size: 14px;
+}
