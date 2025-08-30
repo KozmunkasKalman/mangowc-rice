@@ -25,7 +25,7 @@ configuration {
     active-background:           var(active);
     active-foreground:           var(background);
     selected-normal-background:  var(selected);
-    selected-normal-foreground:  var(background);
+    selected-normal-foreground:  var(selected-foreground);
     selected-urgent-background:  var(active);
     selected-urgent-foreground:  var(background);
     selected-active-background:  var(urgent);
@@ -82,7 +82,7 @@ inputbar {
     border:                      0px 0px 2px dash 0px;
     border-radius:               0px;
     border-color:                @border-colour;
-    background-color:            @background-colour;
+    background-color:            transparent;
     text-color:                  @foreground-colour;
     children:                    [ "prompt", "entry" ];
 }
@@ -147,7 +147,7 @@ element {
 }
 
 element normal.normal {
-    background-color:            var(normal-background);
+    background-color:            transparent;
     text-color:                  var(normal-foreground);
 }
 element normal.urgent {
@@ -161,17 +161,20 @@ element normal.active {
 element selected.normal {
     background-color:            var(selected-normal-background);
     text-color:                  var(selected-normal-foreground);
+    font-weight:                 bold;
 }
 element selected.urgent {
     background-color:            var(selected-urgent-background);
     text-color:                  var(selected-urgent-foreground);
+    font-weight:                 bold;
 }
 element selected.active {
     background-color:            var(selected-active-background);
     text-color:                  var(selected-active-foreground);
+    font-weight:                 bold;
 }
 element alternate.normal {
-    background-color:            var(alternate-normal-background);
+    background-color:            transparent;
     text-color:                  var(alternate-normal-foreground);
 }
 element alternate.urgent {

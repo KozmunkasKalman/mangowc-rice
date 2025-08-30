@@ -1,7 +1,7 @@
 /* CSS for default things */
 
 window#waybar {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 #tags {
@@ -10,7 +10,7 @@ window#waybar {
   margin-right: 4px;
   padding: 0px;
   background-color: transparent;
-  color: #cacabe;
+  color: #dfdfdf;
 }
 
 #tags button {
@@ -29,21 +29,21 @@ window#waybar {
   padding-left: 20px;
   padding-right: 20px;
   background-color: transparent;
-  color: #cacabe;
+  color: #dfdfdf;
   font-size: 16px;
 }
 
 #tags button.focused {
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #cacabe;
-  color: #151412;
+  background-color: #dfdfdf;
+  color: #181818;
   font-size: 16px;
 }
 
 #tags button.urgent {
   background-color: #cc0000;
-  color: #cacabe;
+  color: #dfdfdf;
 }
 
 #window {
@@ -55,7 +55,7 @@ window#waybar {
   font-family: "FiraCode Nerd Font", auto, auto;
   font-size: 14px;
   background-color: transparent;
-  color: #cacabe;
+  color: #dfdfdf;
 }
 
 #waybar.empty #window { /* no window makes window title disappear */
@@ -74,7 +74,7 @@ window#waybar {
   font-size: 18px;
   font-weight: bold;
   background-color: transparent;
-  color: #cacabe;
+  color: #dfdfdf;
 }
 
 #tray {
@@ -87,7 +87,7 @@ window#waybar {
   font-family: "FiraCode Nerd Font Mono", auto, auto;
   font-size: 12px;
   background-color: transparent;
-  color: #cacabe;
+  color: #dfdfdf;
 }
 
 #battery {
@@ -100,7 +100,7 @@ window#waybar {
   font-family: "Sans", auto, auto;
   font-size: 14px;
   background-color: transparent;
-  color: #cacabe;
+  color: #dfdfdf;
 }
 
 #network {
@@ -113,19 +113,19 @@ window#waybar {
   font-family: "FiraCode Nerd Font", auto, auto;
   font-size: 14px;
   background-color: transparent;
-  color: #cacabe;
+  color: #dfdfdf;
 }
 
 #pulseaudio {
   margin: 0px;
   padding: 0px;
-  padding-left: 8px;
+  padding-left: 10px;
   padding-right: 6px;
   border-radius: 4px 0px 0px 4px;
   font-family: "FiraCode Nerd Font", auto, auto;
   font-size: 14px;
-  background-color: #cacabe;
-  color: #151412;
+  background-color: #dfdfdf;
+  color: #181818;
 }
 
 /* Custom */
@@ -140,19 +140,19 @@ window#waybar {
   font-family: "FiraCode Nerd Font Mono", auto, auto;
   font-size: 18px;
   font-weight: bold;
-  background-color: #cacabe;
-  color: #151412;
+  background-color: #dfdfdf;
+  color: #181818;
 }
 
 /* Tooltips */
 
 tooltip {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.65);
   border-radius: 4px;
 }
 
 tooltip label {
-  color: #cacabe;
+  color: #dfdfdf;
   font-family: "FiraCode Nerd Font Mono", auto, auto;
   font-size: 14px;
 }

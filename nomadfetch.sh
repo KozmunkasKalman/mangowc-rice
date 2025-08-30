@@ -62,7 +62,7 @@ printf "├╴• ${b}$wmde_icon DE/WM:${n} ${XDG_CURRENT_DESKTOP^}\n"
 printf "├╴• ${b} Terminal:${n} ${TERM^}\n"
 printf "╰╴• ${b}󱆃 Shell:${n} $(ps -p $$ | grep "sh" | awk '{ for (i=1; i <= NF; i++) { sub(/[a-z]/, toupper(substr($i, 1, 1)), $i) }; print $4}')\n"
 
-printf "┌─${b}[󰸌 \e[31mC\e[33mo\e[32ml\e[36mo\e[34mr\e[35ms\e[0m]${n}────────╴•\n"
+printf "┌─${b}[󰸌 \e[31mC\e[33mo\e[32ml\e[36mo\e[34mr\e[35ms\e[0m]${n}──────╴•\n"
 printf "│\e[30m███\e[31m███\e[32m███\e[33m███\e[34m███\e[35m███\e[36m███\e[37m███\e[0m\n"
 printf "│\e[90m███\e[91m███\e[92m███\e[93m███\e[94m███\e[95m███\e[96m███\e[97m███\e[0m\n"
 printf "└─────────────────╴•\n"

@@ -27,15 +27,6 @@ alias fim='vim "$(find | fzf --preview "cat {}")"'
 
 alias del='rm -Irv "$(find | fzf -m)"'
 
-#for arch
 alias s='paru -S'
 alias u='paru -Syu'
 alias r='paru -R'
-
-#for nixos
-alias rebuildsys='sudo nixos-rebuild switch --flake /etc/nixos#default'
-alias updateflakelock='cd /etc/nixos/ && nix flake update && cd -'
-alias cleanup='sudo nix-collect-garbage'
-alias editconfig='$EDITOR /etc/nixos/configuration.nix'
-alias editflake='$EDITOR /etc/nixos/flake.nix'
-

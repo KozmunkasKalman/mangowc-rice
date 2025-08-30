@@ -58,6 +58,6 @@
   "custom/menu": {
     "format": "󰀻",
     "tooltip-format": "Menu",
-    "on-click": "rofi -show drun -theme ~/.config/rofi/style.rasi"
+    "on-click": "bash ~/.config/rofi/rofi-menu.sh"
   }
 }
