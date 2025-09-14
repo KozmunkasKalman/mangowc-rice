@@ -14,6 +14,12 @@
 
   "dwl/window": {
     "format": "{title}",
+    "rewrite": {
+      "(.*)(- Brave)(.*)": " $1",
+      "(.*)(- Thunar)(.*)": " $1",
+      "(.*)(kitty)(.*)": " Kitty",
+      "(.*)(kew)(.*)": " $1"
+    },
     "on-click": "",
     "tooltip": false
   },
@@ -43,9 +49,9 @@
     "format-disconnected": " Disconnected",
     "tooltip-format": "{ipaddr}"
   },
-
+  
   "pulseaudio": {
-    // "scroll-step": 1, // %, can be a float
+    "scroll-step": 1, // %, can be a float
     "format": "{icon} {volume}%",
     "format-muted": "󰖁",
     "format-icons": {
@@ -55,9 +61,11 @@
     "on-click": "pavucontrol"
   },
 
+
+
   "custom/menu": {
     "format": "󰀻",
     "tooltip-format": "Menu",
-    "on-click": "bash ~/.config/rofi/rofi-menu.sh"
+    "on-click": "bash ~/.config/rofi/menu.sh"
   }
 }

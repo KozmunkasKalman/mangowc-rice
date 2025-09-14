@@ -34,7 +34,7 @@ opt_10_cmd='nwg-look'
 
 rofi_cmd() {
 	rofi \
-        -theme ~/.config/rofi/style.rasi \
+        -theme ~/.config/rofi/menu-style.rasi \
         -dmenu \
 	-p "$prompt" \
 	-sep ',' \

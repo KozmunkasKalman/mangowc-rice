@@ -42,10 +42,10 @@ configuration {
 window {
     /* properties for window widget */
     transparency:                "real";
-    location:                    center;
-    anchor:                      center;
+    location:                    northwest;
+    anchor:                      northwest;
     fullscreen:                  false;
-    width:                       400px;
+    width:                       280px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -106,7 +106,7 @@ entry {
 listview {
     enabled:                     true;
     columns:                     1;
-    lines:                       9;
+    lines:                       11;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   true;
