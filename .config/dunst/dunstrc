@@ -355,7 +355,7 @@
 [urgency_critical]
     background = "#181818"
     foreground = "#dfdfdf"
-    frame_color = "#cf0000"
+    frame_color = "#cf001f"
     timeout = 0
     override_pause_level = 60
     default_icon = dialog-warning

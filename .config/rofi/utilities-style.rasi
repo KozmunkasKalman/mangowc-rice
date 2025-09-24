@@ -7,7 +7,6 @@ configuration {
 	display-filebrowser:        " ";
 	display-window:             " ";
 
-
 	hover-select: true;
 	me-select-entry: "";
 	me-accept-entry: [ MousePrimary, MouseSecondary, MouseDPrimary ];
@@ -47,10 +46,10 @@ configuration {
 window {
     /* properties for window widget */
     transparency:                "real";
-    location:                    northwest;
-    anchor:                      northwest;
+    location:                    northeast;
+    anchor:                      northeast;
     fullscreen:                  false;
-    width:                       280px;
+    width:                       200px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -80,7 +79,7 @@ mainbox {
 
 /*****----- Inputbar -----*****/
 inputbar {
-    enabled:                     true;
+    enabled:                     false;
     spacing:                     4px;
     margin:                      0px;
     padding:                     8px;
@@ -111,10 +110,10 @@ entry {
 listview {
     enabled:                     true;
     columns:                     1;
-    lines:                       11;
+    lines:                       7;
     cycle:                       true;
     dynamic:                     true;
-    scrollbar:                   true;
+    scrollbar:                   false;
     layout:                      vertical;
     reverse:                     false;
     fixed-height:                true;

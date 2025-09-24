@@ -1,5 +1,7 @@
 PS1="\u \w \$ "
 
+#source -- ~/.local/share/blesh/ble.sh
+
 if [[ $iatest -gt 0 ]]; then bind "set bell-style visible"; fi
 
 

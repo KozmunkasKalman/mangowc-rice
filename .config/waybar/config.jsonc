@@ -6,7 +6,7 @@
 
   "modules-left": ["custom/menu", "dwl/tags", "dwl/window"],
   "modules-center": ["clock"],
-  "modules-right": ["tray", "battery", "network", "pulseaudio"],
+  "modules-right": ["tray", "battery", "network", "pulseaudio", "custom/utilities"],
 
   "dwl/tags": {
     "hide-vacant": true
@@ -49,7 +49,7 @@
     "format-disconnected": " Disconnected",
     "tooltip-format": "{ipaddr}"
   },
-  
+
   "pulseaudio": {
     "scroll-step": 1, // %, can be a float
     "format": "{icon} {volume}%",
@@ -65,7 +65,13 @@
 
   "custom/menu": {
     "format": "󰀻",
-    "tooltip-format": "Menu",
+    "tooltip-format": "Applications Menu",
     "on-click": "bash ~/.config/rofi/menu.sh"
+  },
+
+  "custom/utilities": {
+    "format": "",
+    "tooltip-format": "Utility Menu",
+    "on-click": "bash ~/scripts/utilities.sh"
   }
 }
