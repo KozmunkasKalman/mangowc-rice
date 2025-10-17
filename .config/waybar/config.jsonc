@@ -2,15 +2,15 @@
   "layer": "top",
   "position": "top",
   "height": 24,
-  "spacing": 4,
+  "spacing": 0,
 
   "modules-left": ["custom/menu", "dwl/tags", "dwl/window"],
   "modules-center": ["clock"],
   "modules-right": ["tray", "battery", "network", "pulseaudio", "custom/utilities"],
+  "_comment": ["cpu", "temperature", "custom/separator", "memory"],
 
-  "dwl/tags": {
-    "hide-vacant": true
-  },
+
+  "dwl/tags": {},
 
   "dwl/window": {
     "format": "{title}",
@@ -30,9 +30,28 @@
   },
 
   "tray": {
-    "icon-size": 16,
-    "spacing": 16,
+    "icon-size": 20,
+    "spacing": 4,
     "show-passive-items": true
+  },
+
+  "cpu": {
+    "interval": 5,
+    "format": "{usage}%",
+    "max-length": 10
+  },
+
+  "temperature": {
+    "thermal-zone": 2,
+    "critical-threshold": 80,
+    "format-critical": "󰈸 {temperatureC}°C",
+    "format": "{temperatureC}°C"
+  },
+
+  "memory": {
+    "interval": 5,
+    "format": "{used:0.1f}g ({percentage}%)",
+    "tooltip-format": "{used:0.1f}GiB / {total:0.1f}GiB"
   },
 
   "battery": {
@@ -40,7 +59,8 @@
       "warning": 33,
       "critical": 10
     },
-    "format": "{capacity}%"
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""]
   },
 
   "network": {
@@ -71,6 +91,12 @@
 
   "custom/utilities": {
     "format": "",
+    "tooltip-format": "Utility Menu",
+    "on-click": "bash ~/scripts/utilities.sh"
+  },
+
+  "custom/separator": {
+    "format": "|",
     "tooltip-format": "Utility Menu",
     "on-click": "bash ~/scripts/utilities.sh"
   }
