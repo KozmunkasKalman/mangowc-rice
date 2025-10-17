@@ -3,7 +3,7 @@
 This is my setup on my Arch system.
 
 List of required software:
-- any linux distribution (like arch for example)
+- any linux distribution (in this case arch)
 - bash
 - mangowc
 - dunst
@@ -78,7 +78,7 @@ Default keybinds: (remember, the keybinds were made with the hungarian keyboard 
 - ⊞ Super + D => Horizontal deck 
 - ⊞ Super + ⎇ Alternate + D => Vertical deck 
 
-- ⊞ Super + N => Change window size in scrolling layout
+- ⊞ Super + ⎈ Control + N => Change window size in scrolling layout
 - ⊞ Super + ⇧ Shift + N => Set window size in scrolling layout to 100%
 
 - ⊞ Super + ⎈ Control + ←→ Left/Right => Switch to tag
@@ -87,10 +87,12 @@ Default keybinds: (remember, the keybinds were made with the hungarian keyboard 
 - ⊞ Super + ⇧ Shift + Numbers => Move window to tag X
 - ⊞ Super + ⇧ Shift + ⎇ Alternate + Numbers => Move window to tag X without switching to it
 
-- ⎈ Control + ⎇ Alternate + ↑↓←→ Arrows => Resize tiled master window
+- ⎈ Control + ⎇ Alternate + ↑↓←→ Arrows => Change focused monitor
+- ⎈ Control + ⇧ Shift + ⎇ Alternate + ↑↓←→ Arrows => Move window to monitor
 
-- ⇧ Shift + ⎇ Alternate + ↑↓←→ Arrows => Move floating window
-- ⊞ Super + ⎇ Alternate + ↑↓←→ Arrows => Resize floating window
+- ⎈ Control + ⊞ Super + ⎇ Alternate + ↑↓←→ Arrows => Resize window
+
+- ⊞ Super + ⇧ Shift + ⎇ Alternate + ↑↓←→ Arrows => Move floating window
 
 - ⎇ Alternate (hold) + ↹ Tabulator => Overview & focus window
 
@@ -98,7 +100,7 @@ Default keybinds: (remember, the keybinds were made with the hungarian keyboard 
 
 - ⊞ Super + T/↵ Enter => Open terminal (kitty)
 - ⊞ Super + W => Web menu (browser [brave] & common websites)
-- ⊞ Super + ⇧ Shift + W => Open web browser [brave]
+- ⊞ Super + ⇧ Shift + W => Open web browser (brave)
 - ⊞ Super + E => File manager (thunar)
 - ⊞ Super + ⇧ Shift + E => TUI file manager (yazi)
 - ⊞ Super + M => Music player (kew)

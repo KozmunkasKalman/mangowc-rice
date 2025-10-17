@@ -8,7 +8,6 @@ if [[ $iatest -gt 0 ]]; then bind "set bell-style visible"; fi
 
 export EDITOR='nvim'
 export VISUAL='nvim'
-export TERM='kitty'
 export TERMINAL='kitty'
 export TERMINAL_PROG='kitty'
 export BROWSER='brave'
@@ -30,7 +29,6 @@ alias ls='ls -Nh --color=always --group-directories-first'
 alias la='ls -ANh --color=always --group-directories-first'
 alias ll='ls -lANh --color=always --group-directories-first'
 
-alias cat='bat --color=always'
 alias grep='grep --color=auto'
 alias ftxt='grep -iIHrn --color=always "$1" . | less -r'
 
