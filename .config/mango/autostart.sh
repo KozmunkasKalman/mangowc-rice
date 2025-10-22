@@ -11,4 +11,5 @@ dunst &
 /usr/lib/xfce-polkit/xfce-polkit &
 wl-clip-persist --clipboard regular --reconnect-tries 0 &
 wl-paste --type text --watch cliphist store & 
-swww-daemon
+swww-daemon &
+sudo dhcpcd eth0

@@ -1,13 +1,22 @@
 {
   "layer": "top",
+
   "position": "top",
+
   "height": 24,
+  "width": -1,
+
+  "margin-top": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+
   "spacing": 0,
 
   "modules-left": ["custom/menu", "dwl/tags", "dwl/window"],
   "modules-center": ["clock"],
   "modules-right": ["tray", "battery", "network", "pulseaudio", "custom/utilities"],
-  "_comment": ["cpu", "temperature", "custom/separator", "memory"],
+  "_unused": ["cpu", "temperature", "custom/separator", "memory"],
+
 
 
   "dwl/tags": {},
@@ -24,10 +33,14 @@
     "tooltip": false
   },
 
+
+
   "clock": {
     "format": "{:%H:%M}",
     "tooltip-format": " {:%Y %B %d}\n\n{calendar}"
   },
+
+
 
   "tray": {
     "icon-size": 20,
@@ -62,7 +75,7 @@
     "format": "{icon} {capacity}%",
     "format-icons": ["", "", "", "", ""]
   },
-
+  
   "network": {
     "format-wifi": " Wifi ({signalStrength}%)",
     "format-ethernet": " Ethernet",
@@ -97,7 +110,6 @@
 
   "custom/separator": {
     "format": "|",
-    "tooltip-format": "Utility Menu",
-    "on-click": "bash ~/scripts/utilities.sh"
+    "tooltip": false
   }
 }

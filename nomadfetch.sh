@@ -4,11 +4,15 @@ n=$(tput sgr0)
 kernel="$(uname)"
 if [ $kernel == Linux ]; then
   kern_icon=""
+else
+  kern_icon="?"
 fi
 
 distro="$(grep -m1 -w "ID" /etc/os-release | cut -c4-999)"
 if [ $distro == arch ]; then
   dist_icon=""
+elif [ $distro == artix ]; then
+  dist_icon=""
 elif [ $distro == debian ]; then
   dist_icon="󰣚"
 elif [ $distro == fedora ]; then
@@ -19,6 +23,8 @@ elif [ $distro == rhel ]; then
   dist_icon=""
 elif [ $distro == ubuntu ]; then
   dist_icon=""
+elif [ $distro == void ]; then
+  dist_icon=""
 elif [ $distro == linux ]; then
   dist_icon=""
 else
@@ -26,12 +32,18 @@ else
 fi
 
 wmde=$XDG_CURRENT_DESKTOP
-if [ $wmde == gnome ]; then
+if [ $wmde == cinnamon ]; then
+  wmde_icon=""
+elif [ $wmde == gnome ]; then
   wmde_icon=""
 elif [ $wmde == hyprland ]; then
   wmde_icon=""
+elif [ $wmde == i3 ]; then
+  wmde_icon=""
 elif [ $wmde == plasma ]; then
   wmde_icon=""
+elif [ $wmde == sway ]; then
+  wmde_icon=""
 elif [ $wmde == XFCE ]; then
   wmde_icon=""
 else
@@ -60,7 +72,7 @@ printf "└╴• ${b} Uptime:${n} $(uptime | awk '{print $3}' | tr -d , | se
 printf "╭─${b}[ Environment]${n}─╴•\n"
 printf "├╴• ${b}$wmde_icon DE/WM:${n} ${XDG_CURRENT_DESKTOP^}\n"
 printf "├╴• ${b} Terminal:${n} ${TERMINAL^}\n"
-printf "╰╴• ${b}󱆃 Shell:${n} $(printf $SHELL | sed -e 's|/bin/||g' | sed 's/^\s*./\U&\E/g' )\n"
+printf "╰╴• ${b}󱆃 Shell:${n} $(printf $SHELL | sed -e 's|/usr/bin/|/bin/|g' | sed -e 's|/bin/||g'| sed 's/^\s*./\U&\E/g' )\n"
 
 printf "┌─${b}[󰸌 \e[31mC\e[33mo\e[32ml\e[36mo\e[34mr\e[35ms\e[0m]${n}──────╴•\n"
 printf "│\e[30m███\e[31m███\e[32m███\e[33m███\e[34m███\e[35m███\e[36m███\e[37m███\e[0m\n"

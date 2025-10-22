@@ -1,7 +1,7 @@
 /* CSS for default things */
 
 window#waybar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 #tags {
@@ -13,7 +13,7 @@ window#waybar {
   color: #dfdfdf;
 }
 
-#tags button {
+#tags button { /* hide empty tags */
   min-width: 0;
   min-height: 0;
   margin: 0px;
@@ -26,31 +26,26 @@ window#waybar {
   font-weight: bold;
 }
 
-#tags button.occupied {  
+#tags button.occupied,
+#tags button.focused,
+#tags button.urgent { /* non-empty tags shared */
   padding-left: 24px;
-  padding-right: 24px;
+  padding-right: 23px; /* looks better if right is one pixel less than right in most cases */
   margin-left: 1px;
+  font-size: 16px;
+}
+
+#tags button.occupied {  
   background-color: transparent;
   color: #dfdfdf;
-  font-size: 16px;
 }
-
 #tags button.focused {
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-left: 1px;
   background-color: #dfdfdf;
   color: #181818;
-  font-size: 16px;
 }
-
 #tags button.urgent {
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-left: 1px;
   background-color: #ff8f40;
   color: #dfdfdf;
-  font-size: 16px;
 }
 
 #window {
@@ -65,18 +60,18 @@ window#waybar {
   color: #dfdfdf;
 }
 
-#waybar.empty #window { /* no window makes window title disappear */
+#waybar.empty #window { /* no active window makes window title disappear */
   background-color: transparent;
   background: none;
 }
 
 #clock {
   margin: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 4px;
+  margin-right: 4px;
   padding: 0px;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
   font-family: "FiraCode Nerd Font Mono", auto, auto;
   font-size: 18px;
   font-weight: bold;
@@ -86,7 +81,7 @@ window#waybar {
 
 #tray {
   margin: 0px;
-  margin-left: 2px;
+  margin-left: 4px;
   margin-right: 4px;
   padding: 0px;
   padding-left: 2px;
@@ -130,10 +125,11 @@ window#waybar {
   color: #dfdfdf;
 }
 
-#battery {
+#battery,
+#pulseaudio {
   margin: 0px;
-  margin-left: 4px;
-  margin-right: 8px;
+  margin-left: 2px;
+  margin-right: 2px;
   padding: 0px;
   padding-left: 10px;
   padding-right: 10px;
@@ -146,26 +142,13 @@ window#waybar {
 
 #network {
   margin: 0px;
-  margin-left: 2px;
+  margin-left: 6px;
   margin-right: 4px;
   padding: 0px;
   font-family: "FiraCode Nerd Font", auto, auto;
   font-size: 14px;
   background-color: transparent;
   color: #dfdfdf;
-}
-
-#pulseaudio {
-  margin: 0px;
-  margin-left: 4px;
-  padding: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 4px;
-  font-family: "FiraCode Nerd Font", auto, auto;
-  font-size: 14px;
-  background-color: #dfdfdf;
-  color: #181818;
 }
 
 /* Custom */
@@ -186,7 +169,7 @@ window#waybar {
 
 #custom-utilities {
   margin: 0px;
-  margin-left: 3px;
+  margin-left: 2px;
   padding: 0px;
   padding-left: 10px;
   padding-right: 10px;

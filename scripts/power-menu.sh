@@ -1,16 +1,16 @@
 #! /bin/bash
 
-lock=''
+lock=''
 lock_cmd='hyprlock'
 
-logout=''
+logout=''
 logout_cmd='killall mango'
 
-reboot=''
-reboot_cmd='systemctl reboot'
+reboot=''
+reboot_cmd='sudo dinitctl restart'
 
-shutdown=''
-shutdown_cmd='systemctl poweroff'
+shutdown=''
+shutdown_cmd='sudo dinitctl shutdown'
 
 
 rofi_cmd() {
