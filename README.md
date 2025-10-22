@@ -3,7 +3,7 @@
 This is my setup on my Arch system.
 
 List of required software:
-- any linux distribution (in this case arch)
+- any linux distribution (in this case artix with dinit)
 - bash
 - mangowc
 - dunst
@@ -54,29 +54,34 @@ Default keybinds: (remember, the keybinds were made with the hungarian keyboard 
 
 - ⊞ Super + ⇧ Shift + R => Reload MangoWC config
 
-- ⊞ Super + ↑↓←→ Arrows => Change focused window
-- ⊞ Super + S/KP+ => Focus next window
-- ⊞ Super + (⇧ Shift + S)/KP- => Focus previous window
+- ⊞ Super + ↹ Tabulator => Switch tag layout
+- ⊞ Super + R => Horizontal tiling master
+- ⊞ Super + V => Vertical tiling master
+- ⊞ Super + S => Stack/monocle
+- ⊞ Super + N => Horizontal scrolling
+- ⊞ Super + ⎇ Alternate + N => Vertical scrolling
+- ⊞ Super + D => Horizontal deck
+- ⊞ Super + ⎇ Alternate + D => Vertical deck
+- ⊞ Super + I => Grid
 
+- ⊞ Super + ↑↓←→ Arrows => Change focused window
+- ⊞ Super + KP+ => Focus next window
+- ⊞ Super + KP- => Focus previous window
 - ⊞ Super + ⇧ Shift + ↑↓←→ Arrows => Swap windows
+- ⊞ Super + Q => Swap window with master
 
 - ⊞ Super + G => Global (will move to active tag)
-- ⊞ Super + ⇧ Shift + G => Toggle gaps
 - ⊞ Super + F => Floating
 - ⊞ Super + ⇧ Shift + F => Maximized
 - ⊞ Super + F11 => Faux fullscreen
 - ⊞ Super + H => Hidden/minimized
-- ⊞ Super + ⇧ Shift + H => Restore hidden/minimized windows
+- ⊞ Super + U => Restore hidden/minimized windows (unhide)
 - ⊞ Super + O => Overlay (will be above floating windows)
 
-- ⊞ Super + ↹ Tabulator => Switch tag layout
-- ⊞ Super + R => Horizontal tiling master
-- ⊞ Super + V => Vertical tiling master 
-- ⊞ Super + S => Stack/monocle
-- ⊞ Super + N => Horizontal scrolling 
-- ⊞ Super + ⎇ Alternate + N => Vertical scrolling 
-- ⊞ Super + D => Horizontal deck 
-- ⊞ Super + ⎇ Alternate + D => Vertical deck 
+- ⊞ Super + ⇧ Shift + G => Toggle gaps
+
+- ⊞ Super + ⇱ Home => Increase master window count
+- ⊞ Super + ⇲ End => Decrease master window count
 
 - ⊞ Super + ⎈ Control + N => Change window size in scrolling layout
 - ⊞ Super + ⇧ Shift + N => Set window size in scrolling layout to 100%
@@ -103,7 +108,7 @@ Default keybinds: (remember, the keybinds were made with the hungarian keyboard 
 - ⊞ Super + ⇧ Shift + W => Open web browser (brave)
 - ⊞ Super + E => File manager (thunar)
 - ⊞ Super + ⇧ Shift + E => TUI file manager (yazi)
-- ⊞ Super + M => Music player (kew)
+- ⊞ Super + M => Music player (strawberry)
 
 - ⎈ Control + ␣ Space => Rofi DRun
 - ⊞ Super + 0 => Application Menu
@@ -118,3 +123,9 @@ Default keybinds: (remember, the keybinds were made with the hungarian keyboard 
 
 - ⎙ PrintScreen => Take fullscreen screenshot
 - ⇧ Shift + ⎙ PrintScreen => Take selection screenshot
+
+- ⊞ Super + 🐁 Left Mouse Button => Move window
+- ⊞ Super + 🐁 Middle Mouse Button => Maximize
+- ⊞ Super + 🐁 Right Mouse Button => Resize window
+- ⎈ Control + 🐁 Middle Mouse Button => Close window
+
