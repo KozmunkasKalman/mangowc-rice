@@ -2,35 +2,29 @@
 
 prompt=' '
 
-option_1=" Web Browser (Brave)"
+option_1=" Brave"
 opt_1_cmd='brave'
 
-option_2=" File Manager (Thunar)"
+option_2=" Thunar"
 opt_2_cmd='thunar'
 
-option_3=" Terminal (Kitty)"
+option_3=" Kitty"
 opt_3_cmd='kitty'
 
-option_4=" Image Editor (GIMP)"
+option_4=" GIMP"
 opt_4_cmd='gimp'
 
-option_5=" Office (LibreOffice)"
-opt_5_cmd='libreoffice'
+option_5=" OnlyOffice"
+opt_5_cmd='onlyoffice-desktopeditors'
 
-option_6=" Music Player (Kew)"
-opt_6_cmd='kitty -e kew'
+option_6=" Strawberry"
+opt_6_cmd='strawberry'
 
-option_7="󰙽 DAW (LMMS)"
-opt_7_cmd='lmms'
+option_7=" GParu"
+opt_7_cmd='kitty -e /home/anon/scripts/gparu.sh'
 
-option_8=" Package Manager (GParu)"
-opt_8_cmd='kitty -e /home/anon/scripts/gparu.sh'
-
-option_9=" System Monitor (HTop)"
-opt_9_cmd='kitty -e htop'
-
-option_10=" GTK Settings (NWG)"
-opt_10_cmd='nwg-look'
+option_8=" HTop"
+opt_8_cmd='kitty -e htop'
 
 rofi_cmd() {
 	rofi \
@@ -42,7 +36,7 @@ rofi_cmd() {
 }
 
 run_rofi() {
-	printf "$option_1,$option_2,$option_3,$option_4,$option_5,$option_6,$option_7,$option_8,$option_9,$option_10" | rofi_cmd
+	printf "$option_1,$option_2,$option_3,$option_4,$option_5,$option_6,$option_7,$option_8" | rofi_cmd
 }
 
 case "$(run_rofi)" in
@@ -54,6 +48,4 @@ case "$(run_rofi)" in
 	$option_6) ${opt_6_cmd};;
 	$option_7) ${opt_7_cmd};;
 	$option_8) ${opt_8_cmd};;
-	$option_9) ${opt_9_cmd};;
-	$option_10) ${opt_10_cmd};;
 esac

@@ -7,10 +7,10 @@ logout=''
 logout_cmd='killall mango'
 
 reboot=''
-reboot_cmd='sudo dinitctl restart'
+reboot_cmd='killall mango & systemctl reboot'
 
 shutdown=''
-shutdown_cmd='sudo dinitctl shutdown'
+shutdown_cmd='killall mango & systemctl poweroff'
 
 
 rofi_cmd() {

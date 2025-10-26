@@ -1,7 +1,7 @@
 /* CSS for default things */
 
 window#waybar {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 #tags {
@@ -50,9 +50,10 @@ window#waybar {
 
 #window {
   margin: 0px;
-  margin-left: 8px;
+  margin-left: 6px;
   margin-right: 4px;
   padding: 0px;
+  padding-left: 4px;
   padding-right: 4px;
   font-family: "FiraCode Nerd Font", auto, auto;
   font-size: 14px;

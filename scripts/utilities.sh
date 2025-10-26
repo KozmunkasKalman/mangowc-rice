@@ -11,8 +11,11 @@ opt_2_cmd=~/scripts/wallpaper-menu.sh
 option_3=" Light Filter"
 opt_3_cmd=~/scripts/wlsunset-toggle.sh
 
-option_4="? Lorem Ipsum"
-opt_4_cmd=~/scripts/wlsunset-toggle.sh
+option_4=" Layouts"
+opt_4_cmd=~/scripts/layouts.sh
+
+option_5="󰚠 Transparency"
+opt_5_cmd=~/scripts/waybar-transparency.sh
 
 option_7="⭘ Actions"
 opt_7_cmd=~/scripts/power-menu.sh
