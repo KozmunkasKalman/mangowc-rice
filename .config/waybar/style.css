@@ -1,7 +1,9 @@
 /* CSS for default things */
 
 window#waybar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12;
+
 }
 
 #tags {
@@ -130,7 +132,7 @@ window#waybar {
 #pulseaudio {
   margin: 0px;
   margin-left: 2px;
-  margin-right: 2px;
+  margin-right: 0px;
   padding: 0px;
   padding-left: 10px;
   padding-right: 10px;
@@ -154,13 +156,13 @@ window#waybar {
 
 /* Custom */
 
-#custom-menu {
+#custom-appmenu {
   margin: 0px;
   margin-right: 2px;
   padding: 0px;
   padding-left: 8px;
-  padding-right: 11px;
-  border-radius: 0px 4px 4px 0px;
+  padding-right: 8px;
+  border-radius: 4px;
   font-family: "FiraCode Nerd Font Mono", auto, auto;
   font-size: 18px;
   font-weight: bold;
@@ -170,11 +172,11 @@ window#waybar {
 
 #custom-utilities {
   margin: 0px;
-  margin-left: 2px;
+  margin-left: 4px;
   padding: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 4px 0px 0px 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 4px;
   font-family: "FiraCode Nerd Font Mono", auto, auto;
   font-size: 18px;
   font-weight: bold;

@@ -1,0 +1,124 @@
+# ------------------------------------------------------
+﻿# Tauon Music Box Theme File - Adwaita Blue Accent
+# ------------------------------------------------------
+
+# ---- Backgrounds ----
+
+24,24,24        top panel                # --- GNOME view-bg color ---
+24,24,24        tracklist panel          # --- GNOME window-bg color ---
+24,24,24        side panel               # --- GNOME view-bg color ---
+24,24,24        bottom panel             # --- GNOME view-bg color, 21% Oklab lightness ---
+24,24,24        queue panel              # --- GNOME secondary-sidebar-backdrop-color ---
+24,24,24        gallery background       # --- GNOME view-bg color ---
+
+# ---- Playlist ----
+
+223,223,223     track line               # --- GNOME light-4 ---
+223,223,223     track time               # --- GNOME dark-1 ---
+223,223,223     track index              # --- GNOME dark-1 ---
+103,215,191     track artist             # --- GNOME blue accent (dark), 75% Oklab lightness ---
+95,175,255      track album              # --- GNOME yellow accent (dark), 74% Oklab lightness ---
+
+255,212,111     track playing            # --- GNOME light-2 ---
+255,212,111     time playing             # --- GNOME light-2 ---
+255,212,111     index playing            # --- GNOME light-2 ---
+255,143,64      artist playing           # --- GNOME blue accent (dark), 84% lightness ---
+255,143,64      album playing            # --- GNOME yellow accent (dark), 84% Oklab lightness ---
+
+255,136,140     track missing            # --- GNOME standalone-dark-red ---
+
+154,153,150     fav line                 # --- GNOME light-5 ---
+223,223,223     folder line              # --- GNOME dark-3 ---
+223,223,223     folder title             # --- GNOME light-5 ---
+
+46,46,50        playing highlight        # --- GNOME sidebar-bg-color ---
+60,60,60        select highlight         # --- GNOME dialog-bg-color ---
+223,223,223     gallery highlight        # --- GNOME blue accent (dark) hover ---
+
+24,24,24        column bar background    # --- GNOME view-bg color ---
+
+# ---- Menu ----
+
+24,24,24        menu background          # --- GNOME view-bg color, 21% Oklab lightness ---
+96,96,96        menu highlight           # --- GNOME dialog-bg-color ---
+24,24,24        menu border              # --- GNOME secondary-sidebar-bg-color ---
+223,223,223     menu text                # --- GNOME light-4 ---    
+140,140,140     menu disable text        # --- GNOME dark-1 ---
+140,140,140     menu icons               # --- GNOME dark-1 ---
+
+# ---- Top Panel ----
+
+223,223,223     tab active text          # --- GNOME light-3 ---      
+223,223,223     tab text                 # --- GNOME dark-1 ---
+24,24,24        tab over                 # --- GNOME window-bg color ---
+24,24,24        tab active background    # --- GNOME window-bg color ---
+24,24,24        tab background           # --- GNOME view-bg color, 21% Oklab lightness ---
+
+223,223,223     music vis                # --- GNOME blue accent (dark) hover ---
+
+24,24,24        window buttons background    # --- GNOME view-bg color ---
+24,24,24       window buttons off           # --- GNOME dark-2 ---
+24,24,24        window buttons on            # --- GNOME secondary-sidebar-bg-color ---
+24,24,24     window buttons icon over     # --- GNOME light-3 ---   
+ 
+# ---- Bottom Panel ----
+
+223,223,223       buttons off              # --- GNOME dark-2 ---
+96,96,96          buttons over             # --- GNOME light-3 ---
+255,255,255       buttons active           # --- GNOME light-3 ---
+
+137,215,255     playing time             # --- GNOME blue accent (dark), 84% lightness ---
+
+223,223,223     seek bar                 # --- GNOME blue accent (dark) hover ---
+60,60,60        seek bg                  # --- GNOME thumbnail-bg-color ---
+60,60,60        volume bg                # --- GNOME thumbnail-bg-color ---
+140,140,140     volume bar               # --- GNOME dark-1 ---
+
+60,60,60        scroll bar               # --- GNOME thumbnail-bg-color ---
+
+96,96,96        mode off                 # --- GNOME dark-2 ---
+223,223,223     mode over                # --- GNOME light-3 ---
+223,223,223     mode on                  # --- GNOME light-3 ---
+
+223,223,223     bottom title             # --- GNOME light-3 ---
+
+# ---- Side Panel ----
+
+223,223,223     title info               # --- GNOME light-3 ---
+223,223,223     extra info               # --- GNOME light-4 ---
+24,24,24   	art border               # --- GNOME view-bg color, 21% Oklab lightness ---
+
+# ---- Mini Mode ----
+
+24,24,24        mini bg                  # --- GNOME window-bg color ---
+24,24,24        mini border              # same as window frame
+223,223,223     mini text 1              # --- GNOME light-3 ---
+# 140,140,140   mini text 2              # --- bugged? ---
+
+# ---- Artist Info ----
+
+24,24,24        artist bio background    # --- GNOME secondary-sidebar-backdrop-color ---
+223,223,223     artist bio text          # --- GNOME light-4 ---
+
+# ---- Misc ----
+
+24,24,24	window frame
+
+# ---- Dialog Box ----
+
+24,24,24        box background           # should be darker than tab background
+24,24,24        box border               # --- same as menu border ---
+
+223,223,223     box title text           # --- same as bottom title ---
+96,96,96       box text label           # --- lower contrast than track index ---
+
+223,223,223     box text normal          # --- same as bottom title ---
+223,223,223     box sub text             # --- same as bottom title ---
+223,223,223     box input text           # --- same as bottom title ---
+60,60,60        box text border          # --- same as seek bg ---
+
+223,223,223     box button text normal              # --- same as track line ---
+223,223,223     box button text highlight           # --- same as track playing --- 
+24,24,24        box button background normal        # --- GNOME view-bg color ---
+24,24,24        box button background highlight     # --- GNOME view-bg color ---
+60,60,60        box button border                   # --- same as seek bg ---

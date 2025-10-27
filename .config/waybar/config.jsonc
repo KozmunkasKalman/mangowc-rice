@@ -6,13 +6,13 @@
   "height": 24,
   "width": -1,
 
-  "margin-top": 0,
-  "margin-left": 0,
-  "margin-right": 0,
+  "margin-top": 12,
+  "margin-left": 16,
+  "margin-right": 16,
 
   "spacing": 0,
 
-  "modules-left": ["custom/menu", "dwl/tags", "dwl/window"],
+  "modules-left": ["custom/appmenu", "dwl/tags", "dwl/window"],
   "modules-center": ["clock"],
   "modules-right": ["tray", "battery", "network", "pulseaudio", "custom/utilities"],
   "_unused": ["cpu", "temperature", "custom/separator", "memory"],
@@ -96,16 +96,16 @@
 
 
 
-  "custom/menu": {
+  "custom/appmenu": {
     "format": "󰀻",
     "tooltip-format": "Applications Menu",
-    "on-click": "bash ~/.config/rofi/menu.sh"
+    "on-click": "bash ~/.config/rofi/app-menu.sh"
   },
 
   "custom/utilities": {
     "format": "",
     "tooltip-format": "Utility Menu",
-    "on-click": "bash ~/scripts/utilities.sh"
+    "on-click": "bash ~/.config/rofi/utilities.sh"
   },
 
   "custom/separator": {

@@ -3,8 +3,12 @@
 This is my setup on my Arch system.
 
 List of required software:
-- any linux distribution (in this case artix with dinit)
+- any orthodox fhs following linux distribution (in this case arch for example), although with some tweaking can most likely work on any distro
 - bash
+- xdg-user-dirs
+- xdg-desktop-portal
+- xdg-desktop-portal-wlr
+- gvfs
 - mangowc
 - dunst
 - xfce-polkit
@@ -13,6 +17,7 @@ List of required software:
 - hyprlock
 - wl-clipboard
 - kitty
+- thunar
 - rofi
 - grim
 - slurp
@@ -20,30 +25,35 @@ List of required software:
 - wlsunset
 - pavucontrol
 - paru
+- fzf
 
 Full list of software used by me with this rice:
 - neovim with [nvchad config](https://github.com/NvChad/NvChad)
 - htop
 - brave
-- thunar
 - ristretto
 - parole
 - xarchiver
 - gimp
-- libreoffice
-- kew
-- lmms
+- onlyoffice
+- tauon
 - nwg-look
 
 I also included a few of my scripts, such as:
 - nomadfetch: a fetch script, which is very broken on other hardware, support is not guaranteed at all, and distros might lack icons, but it works on my machine, so... if you know a way to fix it, make a pr and i'll merge it
-- gparu: a tui frontend for paru made with fzf, allows you to search for packages and installs it
+- gparu: a tui frontend for paru made with fzf, allows you to search for and install packages, update installed packages, look for and remove any installed packages, and clear the cache
 - my rofi scripts:
   - web-menu: from there you can either open just a browser, or open specific commonly used websites
   - wallpaper-menu: allows you to pick a wallpaper and set it with swww, by default the wallpapers have to be in ~/Pictures/Wallpapers/
+  - layout-selector: with this you can select mangowc tag layouts with ease
   - power-menu: a simple power menu that can run hyprlock, exit mango, reboot, or shutdown
 
-Rofi theme, menu, and the power menu are edited versions of [Aditya Shakya (adi1090x)'s Rofi](https://github.com/adi1090x/rofi)
+Rofi menu and power menu themes are edited versions of [Aditya Shakya (adi1090x)'s Rofi](https://github.com/adi1090x/rofi)
+
+TODO:
+- desktop icons with pcmanfm
+- fix animations for layers
+- make a preview video
 
 Feel free to use anything from this (or even all of it) for whatever you want, however you want, whenever, and wherever.
 
@@ -108,7 +118,7 @@ Default keybinds: (remember, the keybinds were made with the hungarian keyboard 
 - ⊞ Super + ⇧ Shift + W => Open web browser (brave)
 - ⊞ Super + E => File manager (thunar)
 - ⊞ Super + ⇧ Shift + E => TUI file manager (yazi)
-- ⊞ Super + M => Music player (strawberry)
+- ⊞ Super + M => Music player (tauon)
 
 - ⎈ Control + ␣ Space => Rofi DRun
 - ⊞ Super + 0 => Application Menu

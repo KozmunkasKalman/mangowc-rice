@@ -2,8 +2,8 @@
 
 prompt=' '
 
-option_1=" Brave"
-opt_1_cmd='brave'
+option_1=" Brave / Quicklinks"
+opt_1_cmd=~/scripts/web-menu.sh
 
 option_2=" Thunar"
 opt_2_cmd='thunar'
@@ -17,18 +17,21 @@ opt_4_cmd='gimp'
 option_5=" OnlyOffice"
 opt_5_cmd='onlyoffice-desktopeditors'
 
-option_6=" Strawberry"
-opt_6_cmd='strawberry'
+option_6=" Tauon"
+opt_6_cmd='tauon'
 
-option_7=" GParu"
-opt_7_cmd='kitty -e /home/anon/scripts/gparu.sh'
+option_7="󰄄 OBS Studio"
+opt_7_cmd='obs'
 
-option_8=" HTop"
-opt_8_cmd='kitty -e htop'
+option_8=" GParu"
+opt_8_cmd='kitty -e /home/anon/scripts/gparu.sh'
+
+option_9=" HTop"
+opt_9_cmd='kitty -e htop'
 
 rofi_cmd() {
 	rofi \
-        -theme ~/.config/rofi/menu-style.rasi \
+        -theme ~/.config/rofi/style.rasi \
         -dmenu \
 	-p "$prompt" \
 	-sep ',' \
@@ -36,7 +39,7 @@ rofi_cmd() {
 }
 
 run_rofi() {
-	printf "$option_1,$option_2,$option_3,$option_4,$option_5,$option_6,$option_7,$option_8" | rofi_cmd
+	printf "$option_1,$option_2,$option_3,$option_4,$option_5,$option_6,$option_7,$option_8,$option_9" | rofi_cmd
 }
 
 case "$(run_rofi)" in
@@ -48,4 +51,5 @@ case "$(run_rofi)" in
 	$option_6) ${opt_6_cmd};;
 	$option_7) ${opt_7_cmd};;
 	$option_8) ${opt_8_cmd};;
+	$option_9) ${opt_9_cmd};;
 esac

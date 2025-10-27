@@ -7,10 +7,10 @@ logout=''
 logout_cmd='killall mango'
 
 reboot=''
-reboot_cmd='killall mango & systemctl reboot'
+reboot_cmd='systemctl reboot'
 
 shutdown=''
-shutdown_cmd='killall mango & systemctl poweroff'
+shutdown_cmd='systemctl poweroff'
 
 
 rofi_cmd() {
