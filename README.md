@@ -25,6 +25,7 @@ List of required software:
 - wlsunset
 - pavucontrol
 - paru
+- [gparu](https://github.com/KozmunkasKalman/gparu)
 - fzf
 
 Full list of software used by me with this rice:
@@ -38,10 +39,9 @@ Full list of software used by me with this rice:
 - onlyoffice
 - tauon
 - nwg-look
+- [nomadfetch](https://github.com/KozmunkasKalman/nomadfetch)
 
 I also included a few of my scripts, such as:
-- nomadfetch: a fetch script, which is very broken on other hardware, support is not guaranteed at all, and distros might lack icons, but it works on my machine, so... if you know a way to fix it, make a pr and i'll merge it
-- gparu: a tui frontend for paru made with fzf, allows you to search for and install packages, update installed packages, look for and remove any installed packages, and clear the cache
 - my rofi scripts:
   - web-menu: from there you can either open just a browser, or open specific commonly used websites
   - wallpaper-menu: allows you to pick a wallpaper and set it with swww, by default the wallpapers have to be in ~/Pictures/Wallpapers/
@@ -52,7 +52,6 @@ Rofi menu and power menu themes are edited versions of [Aditya Shakya (adi1090x)
 
 TODO:
 - desktop icons with pcmanfm
-- fix animations for layers
 - make a preview video
 
 Feel free to use anything from this (or even all of it) for whatever you want, however you want, whenever, and wherever.
