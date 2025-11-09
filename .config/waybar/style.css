@@ -95,37 +95,30 @@ window#waybar {
   color: #dfdfdf;
 }
 
-#cpu {
+#cpu,
+#temperature,
+#memory {
   margin: 0px;
-  margin-left: 0px;
-  margin-right: 4px;
   padding: 0px;
   font-family: "FiraCode Nerd Font", auto, auto;
   font-size: 14px;
   background-color: transparent;
   color: #dfdfdf;
+}
+
+#cpu {
+  margin-left: 0px;
+  margin-right: 4px;
 }
 
 #temperature {
-  margin: 0px;
   margin-left: 4px;
   margin-right: 8px;
-  padding: 0px;
-  font-family: "FiraCode Nerd Font", auto, auto;
-  font-size: 14px;
-  background-color: transparent;
-  color: #dfdfdf;
 }
 
 #memory {
-  margin: 0px;
   margin-left: 8px;
-  margin-right: 4px;
-  padding: 0px;
-  font-family: "FiraCode Nerd Font", auto, auto;
-  font-size: 14px;
-  background-color: transparent;
-  color: #dfdfdf;
+  margin-right: 16px;
 }
 
 #battery,
@@ -156,9 +149,9 @@ window#waybar {
 
 /* Custom */
 
-#custom-appmenu {
+#custom-appmenu,
+#custom-utilities {
   margin: 0px;
-  margin-right: 2px;
   padding: 0px;
   padding-left: 8px;
   padding-right: 8px;
@@ -170,18 +163,12 @@ window#waybar {
   color: #181818;
 }
 
+#custom-appmenu {
+  margin-right: 2px;
+}
+
 #custom-utilities {
-  margin: 0px;
-  margin-left: 4px;
-  padding: 0px;
-  padding-left: 8px;
-  padding-right: 8px;
-  border-radius: 4px;
-  font-family: "FiraCode Nerd Font Mono", auto, auto;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #dfdfdf;
-  color: #181818;
+  margin-left: 3px;
 }
 
 #custom-separator {
@@ -191,7 +178,6 @@ window#waybar {
   padding: 0px;
   font-family: "FiraCode Nerd Font", auto, auto;
   font-size: 16px;
-  font-weight: bold;
   background-color: transparent;
   color: #dfdfdf;
 }

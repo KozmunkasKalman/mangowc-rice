@@ -21,7 +21,7 @@ option_6=" Gaps"
 opt_6_cmd=~/scripts/waybar-gaps.sh
 
 option_7="⭘ Actions"
-opt_7_cmd=~/scripts/power-menu.sh
+opt_7_cmd=~/.config/rofi/power-menu.sh
 
 rofi_cmd() {
 	rofi \

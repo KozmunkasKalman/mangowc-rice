@@ -14,8 +14,8 @@
 
   "modules-left": ["custom/appmenu", "dwl/tags", "dwl/window"],
   "modules-center": ["clock"],
-  "modules-right": ["tray", "battery", "network", "pulseaudio", "custom/utilities"],
-  "_unused": ["cpu", "temperature", "custom/separator", "memory"],
+  "modules-right": ["cpu", "temperature", "custom/separator", "memory", "tray", "battery", "network", "pulseaudio", "custom/utilities"],
+  "_unused": [],
 
 
 
@@ -26,8 +26,11 @@
     "rewrite": {
       "(.*)(- Brave)(.*)": " $1",
       "(.*)(- Thunar)(.*)": " $1",
-      "(.*)(kitty)(.*)": " Kitty",
-      "(.*)(kew)(.*)": " $1"
+      "(.*)(vim)(.*)": " $0",
+      "(.*)(Tauon)(.*)": " Tauon",
+      "(.*)(ONLYOFFICE)(.*)": " $1",
+      "(gparu)": " GParu", 
+      "(Notes)": " Notes"
     },
     "on-click": "",
     "tooltip": false
@@ -42,14 +45,8 @@
 
 
 
-  "tray": {
-    "icon-size": 20,
-    "spacing": 4,
-    "show-passive-items": true
-  },
-
   "cpu": {
-    "interval": 5,
+    "interval": 1,
     "format": "{usage}%",
     "max-length": 10
   },
@@ -62,9 +59,17 @@
   },
 
   "memory": {
-    "interval": 5,
-    "format": "{used:0.1f}g ({percentage}%)",
+    "interval": 1,
+    "format": "{used:0.1f}GiB ({percentage}%)",
     "tooltip-format": "{used:0.1f}GiB / {total:0.1f}GiB"
+  },
+
+
+
+  "tray": {
+    "icon-size": 20,
+    "spacing": 4,
+    "show-passive-items": true
   },
 
   "battery": {

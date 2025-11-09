@@ -2,7 +2,7 @@
 
 prompt=' '
 
-option_1=" Brave"
+option_1=" Web Browser (Brave)"
 opt_1_cmd='brave'
 
 option_2="•  YouTube"
@@ -15,7 +15,7 @@ option_4="•  Discord"
 opt_4_cmd='xdg-open https://discord.com/channels/@me'
 
 option_5="• 󰋾 Instagram"
-opt_5_cmd='xdg-open https://www.youtube.com'
+opt_5_cmd='xdg-open https://www.instagram.com'
 
 option_6="•  Reddit"
 opt_6_cmd='xdg-open https://www.reddit.com/'

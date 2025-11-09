@@ -63,6 +63,7 @@ Default keybinds: (remember, the keybinds were made with the hungarian keyboard 
 - ⊞ Super + X/⌫ Backspace => Close window
 
 - ⊞ Super + ⇧ Shift + R => Reload MangoWC config
+- ⊞ Super + F5 => Reload MangoWC config
 
 - ⊞ Super + ↹ Tabulator => Switch tag layout
 - ⊞ Super + R => Horizontal tiling master
@@ -80,7 +81,7 @@ Default keybinds: (remember, the keybinds were made with the hungarian keyboard 
 - ⊞ Super + ⇧ Shift + ↑↓←→ Arrows => Swap windows
 - ⊞ Super + Q => Swap window with master
 
-- ⊞ Super + G => Global (will move to active tag)
+- ⊞ Super + ⇪ Caps Lock => Global (will move to active tag)
 - ⊞ Super + F => Floating
 - ⊞ Super + ⇧ Shift + F => Maximized
 - ⊞ Super + F11 => Faux fullscreen
@@ -88,7 +89,7 @@ Default keybinds: (remember, the keybinds were made with the hungarian keyboard 
 - ⊞ Super + U => Restore hidden/minimized windows (unhide)
 - ⊞ Super + O => Overlay (will be above floating windows)
 
-- ⊞ Super + ⇧ Shift + G => Toggle gaps
+- ⊞ Super + G => Toggle gaps
 
 - ⊞ Super + ⇱ Home => Increase master window count
 - ⊞ Super + ⇲ End => Decrease master window count
@@ -111,7 +112,7 @@ Default keybinds: (remember, the keybinds were made with the hungarian keyboard 
 
 - ⎇ Alternate (hold) + ↹ Tabulator => Overview & focus window
 
-- ⎈ Control (left) + ⎈ Control (right) => Switch keyboard layout (HU & RU)
+- ⊞ Super + A => Switch keyboard layout (HU & RU) (⎈ Left Control + ⎈ Right Control is broken for some reason)
 
 - ⊞ Super + T/↵ Enter => Open terminal (kitty)
 - ⊞ Super + W => Web menu (browser [brave] & common websites)

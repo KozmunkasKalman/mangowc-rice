@@ -39,11 +39,11 @@ alias vim='nvim'
 alias v='nvim'
 
 
-alias s='paru -S'
-alias u='paru -Syu'
-alias r='paru -R'
-alias c='paru -Scc'
-alias gparu='bash ~/scripts/gparu.sh'
+alias s='gparu i'
+alias i='gparu i'
+alias u='gparu u'
+alias r='gparu r'
+alias c='gparu c'
 
 
 
